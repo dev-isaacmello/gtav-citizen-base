@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DZORDI NETWORK -->
+<!-- BASE PARA CRIAÇÃO V.1 | TODOS OS DIREITOS RESERVADOS A DZORDI NETWORK -->
+<CContentsOfWeatherXmlFile>
+  <!-- Versão do formato de arquivo. -->
+  <VersionNumber value="1.000000"/>
+  <!-- Bloco que define diferentes tipos de condições meteorológicas. -->
+  <WeatherTypes>
+	<Item>
+  <!--Nome da condição meteorológica (por exemplo, EXTRASUNNY). -->
+	<Name>EXTRASUNNY</Name>
+  <!-- Intensidade do sol. (1 para que tenha sol e 0 para remover o sol) -->
+  <Sun value="1.0"/>
+  <!-- Cobertura de nuvens. -->
+  <Cloud value="0.000000"/>
+  <!--  Intensidade mínima e máxima do vento. -->
+  <WindMin value="0.25"/>
+  <WindMax value="1.0"/>
+  <!-- Intensidade da chuva. -->
+  <Rain value="0.000000"/>
+  <!-- Intensidade da neve. -->
+  <Snow value="0.000000"/>
+  <!-- Intensidade de neblina de neve. -->
+  <SnowMist value="0.000000"/>
+  <!-- Intensidade da névoa. -->
+  <Fog value="0.000000"/>
+  <!-- Define a aspereza das ondulações na água. -->
+  <RippleBumpiness value="0.420000" />
+  <!-- Especifica a aspereza mínima das ondulações. -->
+  <RippleMinBumpiness value="0.250000" />
+  <!-- Indica a aspereza máxima das ondulações. -->
+  <RippleMaxBumpiness value="0.500000" />
+  <!-- Define como o vento afeta a aspereza das ondulações. -->
+  <RippleBumpinessWindScale value="0.500000" />
+  <!-- Controla a escala geral das ondulações na água. -->
+  <RippleScale value="0.040000" />
+  <!-- Define a velocidade das ondulações. -->
+  <RippleSpeed value="20.000000" />
+  <!-- Indica como a velocidade é transferida entre diferentes partes da água. -->
+  <RippleVelocityTransfer value="0.450000" />
+  <!-- Configura a aspereza geral do oceano. -->
+  <OceanBumpiness value="0.250000" />
+  <!--  Controla a escala das ondulações em áreas mais profundas do oceano. -->
+  <DeepOceanScale value="2.72000" />
+  <!-- Especifica a amplitude mínima do ruído no oceano. -->
+  <OceanNoiseMinAmplitude value="17.10000" />
+  <!-- Define a amplitude das ondas no oceano. -->
+  <OceanWaveAmplitude value="3.560000" />
+  <!-- Controla a amplitude das ondas na costa.-->
+  <ShoreWaveAmplitude value="1.800000" />
+  <!-- Indica como o vento afeta as ondas no oceano. -->
+  <OceanWaveWindScale value="0.700000" />
+  <!-- Define como o vento afeta as ondas na costa. -->
+  <ShoreWaveWindScale value="0.700000" />
+  <!-- Especifica a amplitude mínima das ondas no oceano. -->
+  <OceanWaveMinAmplitude value="3.000000" />
+  <!-- Configura a amplitude mínima das ondas na costa. -->
+  <ShoreWaveMinAmplitude value="0.200000" />
+  <!-- Indica a amplitude máxima das ondas no oceano. -->
+  <OceanWaveMaxAmplitude value="18.00000" />
+  <!-- Define a amplitude máxima das ondas na costa. -->
+  <ShoreWaveMaxAmplitude value="1.5000000" />
+  <!-- Controla a intensidade da espuma do oceano. -->
+  <OceanFoamIntensity value="0.140000" />
+  <!-- Configura a escala da espuma do oceano. -->
+  <OceanFoamScale value="0.050000" />
+  <!-- Indica a perturbação causada nas ondulações. -->
+  <RippleDisturb value="0.050000" />
+  <!-- Define se há ou não tempestades elétricas. -->
+  <Lightning value="false"/>
+  <!-- Define se há ou não tempestades de areia. -->
+  <Sandstorm value="false"/>
+  <!-- Configurações antigas ou desativadas. -->
+	<OldSettingName>-</OldSettingName>
+	<DropSettingName>-</DropSettingName>
+	<MistSettingName>-</MistSettingName>
+	<GroundSettingName>-</GroundSettingName>
+  <!-- Nome do arquivo de ciclo de tempo associado a essa condição meteorológica. -->
+  <TimeCycleFilename>COMMON:/DATA/TIMECYCLE/W_EXTRASUNNY.XML</TimeCycleFilename>
+  <!-- Nome das configurações de nuvens associadas a essa condição meteorológica. (Deixe em branco caso prefira regular pelo arquivo)-->
+	<CloudSettingsName></CloudSettingsName>
+  </Item>
+  </WeatherTypes>
+  <WeatherCycles>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2" />
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="4"/>
+    </Item>
+	 <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+	<Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+       <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>RAIN</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+	<Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+	<Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+       <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+	<Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+       <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+       <Item>
+      <CycleName>FOGGY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+      <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="4"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+	<Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+       <Item>
+      <CycleName>FOGGY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="4"/>
+    </Item>
+	    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+	<Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>THUNDER</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="4"/>
+    </Item>
+      <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+	<Item>
+      <CycleName>RAIN</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+        <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>FOGGY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+	 <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="3"/>
+	</Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+       <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>FOGGY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>FOGGY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>FOGGY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+	  <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+	<Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+	<Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+	<Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+	<Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+        <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="4"/>
+	</Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>THUNDER</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLEARING</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+	<Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+	 <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+	<Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+   <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="4"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+        <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="4"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+	<Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+	<Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+   <Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLEAR</CycleName>
+      <TimeMult value="4"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+	<Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>RAIN</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>THUNDER</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+  <Item>
+      <CycleName>RAIN</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLEARING</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+	<Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>EXTRASUNNY</CycleName>
+      <TimeMult value="4"/>
+    </Item>
+	<Item>
+      <CycleName>SMOG</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+  </WeatherCycles>
+</CContentsOfWeatherXmlFile>
+<!-- by DZORDI BR v1.0 -->
+<!-- Remasterizado e otimizado para um melhor desempenho -->
+<!-- discord.gg/dzordi -->
